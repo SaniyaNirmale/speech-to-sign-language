@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Hand Signs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <!-- Floating background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Full-screen split layout -->
+    <div class="app-shell">
+
+        <!-- LEFT PANEL: Inputs -->
+        <aside class="panel panel-left">
+
+            <header class="header">
+                <div class="header-icon">🤟</div>
+                <h1>Speech<br>to Signs</h1>
+                <p class="subtitle">Speak or type — see it in sign language instantly</p>
+            </header>
+
+            <!-- Step 1 -->
+            <div class="section-label">
+                <span class="step-badge">1</span> Language &amp; Voice
+            </div>
+            <div class="select-wrapper">
+                <label for="language">🌐 Select Language</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="mr">Marathi</option>
+                </select>
+            </div>
+            <button id="speak-btn" class="btn btn-speak">
+                <span class="mic-icon">🎤</span>
+                <span class="btn-text">Start Speaking</span>
+                <span class="listening-badge" id="listening-badge">● Listening...</span>
+            </button>
+
+            <!-- Divider -->
+            <div class="or-divider"><span>or</span></div>
+
+            <!-- Step 2 -->
+            <div class="section-label">
+                <span class="step-badge">2</span> Type Your Text
+            </div>
+            <textarea id="typed-text" placeholder="Type something here..."></textarea>
+            <button id="submit-btn" class="btn btn-submit">
+                ✨ Convert to Sign Language
+            </button>
+
+        </aside>
+
+        <!-- RIGHT PANEL: Output -->
+        <main class="panel panel-right">
+
+            <div class="section-label">
+                <span class="step-badge">3</span> Result
+            </div>
+
+            <!-- Text results -->
+            <div class="result-row">
+                <div class="result-item">
+                    <span class="result-label">🗣️ Recognized</span>
+                    <p id="recognized-text" class="result-text placeholder-text">Waiting for input...</p>
+                </div>
+                <div class="divider-v"></div>
+                <div class="result-item">
+                    <span class="result-label">🔤 In English</span>
+                    <p id="converted-text" class="result-text placeholder-text">Will appear here...</p>
+                </div>
+            </div>
+
+            <!-- Signs area -->
+            <div class="signs-label">🤲 Hand Signs</div>
+            <div id="hand-signs" class="hand-signs">
+                <div class="empty-state" id="empty-state">
+                    <span class="empty-icon">👋</span>
+                    <span>Hand signs will appear here</span>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
