@@ -1,3 +1,4 @@
-flask
+flask==3.1.2
 googletrans==4.0.0rc1
-Pillow
+httpx==0.13.3
+Pillow==12.3.0
