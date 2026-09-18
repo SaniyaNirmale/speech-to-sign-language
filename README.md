@@ -1,5 +1,9 @@
 # 🤟 Speech to Sign Language
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-brightgreen?style=for-the-badge&logo=vercel)](https://speech-to-sign-language-nine.vercel.app/)
+
+🌐 **Live App:** [https://speech-to-sign-language-nine.vercel.app/](https://speech-to-sign-language-nine.vercel.app/)
+
 A web application that converts **speech or text** into **Indian Sign Language (ISL)** hand sign images — supporting English, Hindi, and Marathi.
 
 ![Speech to Sign Language](static/hand_signs/A.png)
