@@ -12,6 +12,8 @@ build/
 venv/
 env/
 .venv/
+
+# Environment variables — NEVER commit this
 .env
 
 # Flask
@@ -21,10 +23,6 @@ instance/
 # IDE
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
 
 # OS
 .DS_Store

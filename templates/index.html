@@ -28,6 +28,18 @@
                 <p class="subtitle">Speak or type — see it in sign language instantly</p>
             </header>
 
+            <!-- User info + logout -->
+            <div class="user-bar">
+                <div class="user-info">
+                    <span class="user-avatar">{{ user_name[0] | upper }}</span>
+                    <div class="user-details">
+                        <span class="user-name">{{ user_name }}</span>
+                        <span class="user-email">{{ user_email }}</span>
+                    </div>
+                </div>
+                <a href="/logout" class="btn-logout" title="Logout">⏻</a>
+            </div>
+
             <!-- Step 1 -->
             <div class="section-label">
                 <span class="step-badge">1</span> Language &amp; Voice
